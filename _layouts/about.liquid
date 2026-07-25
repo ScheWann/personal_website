@@ -1,0 +1,134 @@
+---
+layout: default
+---
+<style>
+  /* Intro block: subtitle + bio on one side, profile photo on the other, both
+     starting at the same top edge. The upstream layout puts the subtitle in
+     <header> (above the photo) and floats the photo next to the body text only,
+     which left the subtitle stranded on its own row. */
+  .about-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .about-intro-text {
+    flex: 1 1 auto;
+    min-width: 0; /* let long words wrap instead of forcing the flex item wider */
+  }
+
+  /* First paragraph sits flush with the top of the photo. */
+  .about-intro-text > .desc {
+    margin-top: 0;
+  }
+
+  .about-intro .profile {
+    flex: 0 0 20%;
+    width: 20%;
+  }
+
+  /* Photo goes first in the DOM when `profile.align: left`. */
+  .about-intro.profile-left {
+    flex-direction: row-reverse;
+  }
+
+  /* Narrow screens: stack, photo on top, full width. */
+  @media (max-width: 575.98px) {
+    .about-intro,
+    .about-intro.profile-left {
+      flex-direction: column;
+    }
+
+    .about-intro .profile {
+      flex: none;
+      width: 100%;
+      order: -1;
+    }
+  }
+</style>
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+  </header>
+
+  <article>
+    <div class="about-intro{% if page.profile.align == 'left' %} profile-left{% endif %}">
+      <div class="about-intro-text">
+        {% if page.subtitle %}
+          <p class="desc">{{ page.subtitle }}</p>
+        {% endif %}
+        {{ content }}
+      </div>
+
+      {% if page.profile %}
+        <div class="profile">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.2 }}px, (min-width: 576px) 20vw, 95vw{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% social_links %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center_margin.liquid %}
+      {% else %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
+    {% endif %}
+  </article>
+</div>

@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ScheWann
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - ScheWann/CS522_Project
+  - ScheWann/A-Part-to-Whole-Circular-Cell-Explorer
+  - ScheWann/CS529_VDS_Epilepsy
+  - ScheWann/CS529HW1
+  - ScheWann/CS426_PvC
+  - ScheWann/Intramural-Forum-Website
+  - ScheWann/gamewebsite
+  - ScheWann/Government

@@ -1,115 +1,87 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+% Button policy for this page: only Abs, Bib, and PDF are shown.
+%   Abs  <- the `abstract` field
+%   Bib  <- `bibtex_show = {true}`
+%   PDF  <- the `pdf` field (full URL, or a filename placed in /assets/pdf/)
+% `supp`, `video`, or `blog` fields -- each of those renders an extra button.
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@inproceedings{zhao2026loom,
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  title       = {Loom: Multi-Region Analysis of Spatial Transcriptomics with Local Neighborhoods and Global Trajectories},
+  author      = {Zhao, Siyuan and Nipu, Nafiul and Fathollahian, Hossein and Salahudeen, Ameen and Chen, Hao and Karginova, Olga and Marai, G. Elisabeta},
+  booktitle   = {IEEE Transactions on Visualization and Computer Graphics},
+  year        = {2026},
+  month       = {November},
+  preview     = {loom.png},
+  abstract    = {We present Loom, a spatial transcriptomics (ST) visual computing system to support the analysis of pseudo-temporal trajectories, comparative investigation across samples and regions of interest, and the examination of spatially structured processes within local microenvironments. ST is a molecular profiling technology that measures gene expression directly within a thin tissue section while preserving its spatial organization. For practical application-driven analyses, the ST local microenvironment data needs to be integrated with cell reference datasets and temporal simulations of cell behavior. This integration is challenging due to multi-modal registration issues and the complexity of the pseudo-temporal patterns, spatial enrichment data, and gene expression dynamics. Loom leverages a novel glyph coupled with a computational backbone to facilitate the detailed pseudo-temporal exploration of local microenvironments, cross-sample comparisons, and investigation of spatiotemporal biological mechanisms. We evaluate Loom through two case studies developed with experts in tissue pathology and oncologists and through an external usability study. The results demonstrate that Loom supports effectively the discovery of cellular transitions and spatiotemporal expression dynamics.},
+  address     = {Boston, MA, USA},
+  selected    = {true}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@inproceedings{zhao2026dysphagia,
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  title       = {Dysphagia Risk Stratification in Head and Neck Cancer via Two-Stage PRO-Clinical Stacking},
+  author      = {Zhao, Siyuan and Anyimadu, Eric Ababio and Brumm, Zachary G. and Ma, Yue and Fuller, Clifton David and Zhang, Xinhua and Marai, G. Elisabeta and Canahuate, Guadalupe},
+  booktitle   = {IEEE International Conference on Machine Learning and Applications (ICMLA)},
+  year        = {2026},
+  month       = {October},
+  preview     = {digest.png},
+  abstract    = {Dysphagia is a debilitating late effect of head and neck cancer (HNC) treatment, yet timely identification of at-risk patients remains challenging in survivorship care. Definitive assessment relies on videofluoroscopic imaging, as captured by the Dynamic Imaging Grade of Swallowing Toxicity (CTCAE-DIGEST), which, while validated, requires specialized equipment, trained personnel, and significant patient burden, limiting its routine use in surveillance. Patient-reported outcomes (PROs), by contrast, are low-cost, scalable, and easily collected at any clinical encounter, making them an attractive alternative signal for identifying patients who may warrant further evaluation. However, a clear clinical framework for translating PRO responses into actionable interventions is still evolving. In particular, uncertainty remains regarding when a patient's self-reported symptom burden should prompt escalation of care. This study addresses this gap by formulating a single-visit PRO-clinical prediction framework and introducing a clinically interpretable two-stage stacking model to predict swallowing impairment risk using PRO responses and structured clinical variables, without requiring videofluoroscopic imaging. The proposed framework quantifies the independent contributions of patient-reported symptoms and clinical factors within a unified and interpretable risk assessment model. Our findings demonstrate that individual MDADI responses contain predictive information beyond that captured by composite or global summary scores, while interpretability analyses reveal symptom patterns and clinical risk factors associated with swallowing impairment. Together, these results support the use of structured PRO-clinical integration as a practical, imaging-free approach for dysphagia risk stratification in HNC survivorship.},
+  address     = {Rochester, MI, USA},
+  selected    = {true}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@article{chen2026chrompolymerdb,
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {ChromPolymerDB: a high-resolution database of single-cell 3D chromatin structures for functional genomics},
+  author      = {Chen, Min and Du, Lin and Zhao, Siyuan and Ye, Bowei and Delafrouz, Pourya and Farooq, Hammad and Chattopadhyay, Debaleena and Marai, G. Elisabeta and Shao, Zhifeng and Liang, Jie and Czajkowsky, Daniel M. and Chronis, Constantinos},
+  journal     = {Nucleic Acids Research},
+  volume      = {54},
+  number      = {D1},
+  pages       = {D994--D1004},
+  year        = {2026},
+  publisher   = {Oxford University Press},
+  preview     = {chrompolymerdb.png},
+  abstract    = {The three-dimensional (3D) organization of chromatin plays a critical role in regulating gene expression and genomic processes like DNA replication, repair, and genome stability. Although these processes occur at the individual-cell level, most chromatin structure data are derived from population-averaged assays, such as Hi-C, obscuring the heterogeneity of single-cell conformations. To address this limitation, we developed a polymer physics-based modeling framework, the sequential Bayesian inference framework (sBIF), that deconvolutes bulk Hi-C data to reconstruct single-cell 3D chromatin conformations. To support a broader use of sBIF, we created ChromPolymerDB, a publicly accessible, high-resolution database of single-cell chromatin structures inferred by sBIF. The database contains ~10^8 reconstructed 5 kb-resolution single cell structures, spanning over 60,000 genomic loci across 50 human cell types and experimental conditions. ChromPolymerDB features an interactive web interface with tools for 3D structural analysis and multi-omics integration. Users can explore associations between chromatin conformation and gene expression, epigenetic modifications, and regulatory elements. The platform also supports comparative analyses to identify structural changes across cell types, developmental stages, or disease contexts. ChromPolymerDB offers a unique resource for researchers studying the relationship between genome architecture and gene regulation, and for advancing comparative 3D genomics.},
+  pdf         = {https://watermark02.silverchair.com/gkaf1233.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA40wggOJBgkqhkiG9w0BBwagggN6MIIDdgIBADCCA28GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM1uxf_B7b-KKwIDPzAgEQgIIDQIp78I0BYGadluJoNt-h0aXr4-94_J8mMDiD58XcxQOFeThv29ZUIpXu8nf2iBBi4acM8sgvP_iyvwRxzPCgB-hyw-gQTCFmiDLsMae37aCSQaI_EyIIEE5RQ_bkxeQtS4ghk9G3kumX-VMOnXUyd74wz0rGu8INXW4itQpFOnN410MmGOzp1X3Mlw40BwvcC0Sp9KVJcSaBblc1yYbzfBBoKg5orvJSKiA-2xv8HuIoRMvFP_ZhPnU8Nr2aMdqM8HtcBUJPnHR9RddX3YTOT6WhPmHfbm2pod6-l_pvKBhkd3oUb8N0alSaNS9ryJKwlESJaS7rqEpraTEM9X3HIruz-JowqtUrNIGT34ckLYyQjJDNWfyGmOy8ebsi614O-7SOsOEKNtxJcskeMGHuNnZM-66DrOB-oKe53jNtcinIXrhA2Veq297UitGvbUsIUm-gFmy2Oh9i8VVOWkyerrqcrM9TXcxPciQVeAUIwwAl0ZuQPgRjkqlZG4Ro-wdiKho4muM9l_1sPhOvWewHN6eSHslbTN6Sno0S1SOkTgwjoGodI_bBtjItX60AYCzmvMQLop2PjLCawIZgu5veI0W3_EsRkD-ujWY1jDxgKN0eSAmYdaNbXXhTkv5r0yjyec5O3iC8ddYVKcP61NquKlSb-dsS2cIis35VS7W4y-hKOSMoYshjP_5qcLw_myKrB7t7-C-DH8K_vwg0Dmp8zVMzG5yL-uIrbofrdgviJZgk9xIRyUC1mTpv4xqN9gCoDsjtBemX4AqS5-U1L4Hoo34zyT8bWOHJyT-vlzxfvfOzXxlwlhmErKTRFHaYko1zHhXlW4FQRWW4yFcgEsjTDBWL_fZx_PpnQmeexhkQV2oeVSJRi1Db_iMs0xcVx5RPp9gZTMUbazMT39ZF_rfzgGPxCB5fn0DnXkuyv4GMUdMKcBIIWiLcgc-SmHJufwvsAOeYc2hI68BMA-NSev6r7m1miOKWSTsPCK6Lq2DZR2MgE9Vtrk559j-I2VaZH-y5WaLAlWIhBvrU26JRv0QGHw4qakP8awNOI6hhS5m3zC_z-3-zoAPG3C2CC1vneyA6GlG67JyZ3KrJul44gFHrv6Y},
+  selected    = {true}
 }
 
-@book{przibram1967letters,
+@article{nipu2026neurosurgery,
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {Neurosurgery Network Pattern Analysis with 2nd Generation Ensembles},
+  author      = {Nipu, N. and Zhao, S. and Maharathi, B. and Loeb, J. A. and Marai, G. E.},
+  journal     = {Computer Graphics Forum},
+  year        = {2026},
+  publisher   = {Eurographics and John Wiley \& Sons Ltd.},
+  preview     = {epilepsy.png},
+  pdf         = {https://www.evl.uic.edu/documents/nafiul_cgf_epilepsy_2nd_gen.pdf},
+  abstract    = {Evolving measuring and computing capabilities, along with increasingly complex problems or models, are resulting in a new type of dataset: second-generation ensemble data. Like first-generation ensemble data, these data consist of large-scale, repeated measurements of the same process or phenomenon, and often have a spatial component. Unlike older datasets, they typically require the extraction and aggregation of novel complex features, which may be generated through direct measurements rather than simulations, and appear in a wider range of application domains, including neuroscience. We describe an interactive visual analysis solution for this type of second-generation ensemble data, related to the study and planning of surgical interventions in epilepsy treatment. As part of this solution, we introduce a dynamic community abstraction in conjunction with analysis algorithms for feature extraction and aggregation, registration techniques to correlate and project sample data, and custom visual encodings to support the analysis of conserved network patterns. A quantitative and qualitative evaluation with domain experts at four sites demonstrates the effectiveness of this solution. We discuss this approach and solution in the context of second-generation ensemble data analysis, along with the challenges of working with this type of data.}
+}
+
+@inproceedings{fathollahian2025attention,
+  bibtex_show = {true},
+  title       = {Attention-based ROI Discovery in 3D Tissue Images},
+  author      = {Fathollahian, Hossein and Zhao, Siyuan and Nipu, Nafiul and Marai, G. Elisabeta},
+  booktitle   = {IEEE VIS 2025 Bio+Med+Vis Challenge Workshop},
+  year        = {2025},
+  month       = {October},
+  address     = {Vienna, Austria},
+  preview     = {attention_ROI.png},
+  pdf         = {https://arxiv.org/pdf/2511.03751},
+  abstract    = {High-dimensional tissue imaging generates highly complex 3D data containing multiple biomarkers, making it challenging to identify biologically relevant regions without an expert user specifying manual labels for regions of interest. We introduce an approach to automatically identifying regions of interest (ROIs) in the 3D microscopy data. Our approach is based on a novel self-supervised multi-layer graph attention network (SSGAT), coupled with a React interactive interface wrapped around Vitessce. SSGAT employs an adversarial self-supervised learning objective to identify meaningful immune microenvironments through marker interactions. Our method reveals complex spatial bioreactions that can be visually assessed to assess their distribution across tissue.}
+}
+
+@inproceedings{zhao2024parttowhole,
+  bibtex_show = {true},
+  title       = {A Part-to-Whole Circular Cell Explorer},
+  author      = {Zhao, Siyuan and Marai, G. Elisabeta},
+  booktitle   = {IEEE VIS 2024 Bio+Med+Vis Challenge Workshop},
+  year        = {2024},
+  month       = {October},
+  preview     = {cell_explorer.png},
+  pdf         = {https://arxiv.org/pdf/2410.10936},
+  abstract    = {Spatial transcriptomics methods capture cellular measurements such as gene expression and cell types at specific locations in a cell, helping provide a localized picture of tissue health. Traditional visualization techniques superimpose the tissue image with pie charts for the cell distribution. We design an interactive visual analysis system that addresses perceptual problems in the state of the art, while adding filtering, drilling, and clustering analysis capabilities. Our approach can help researchers gain deeper insights into the molecular mechanisms underlying complex biological processes within tissues.}
 }

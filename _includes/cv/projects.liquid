@@ -1,0 +1,61 @@
+{% comment %}
+  LOCAL OVERRIDE of al_folio_cv's templates/cv/projects.liquid.
+
+  Adds support for a `links:` list on a project entry, so one project can point
+  at one or several papers. Upstream only supports a single `url`, and renders
+  it by turning the project title into a link -- not wanted here.
+
+  Data shape in _data/cv.yml:
+
+    - name: My Project
+      summary: "*01/2026 - Present*"
+      links:
+        - title: Loom (IEEE VIS 2026)
+          url: /publications/#zhao2026loom      # site-relative, baseurl applied
+        - title: Project site
+          url: https://example.com/             # absolute, opens in a new tab
+
+  Everything else matches upstream.
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      {% if entry.url %}
+        <h6 class="title font-weight-bold">
+          <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
+        </h6>
+      {% else %}
+        <h6 class="title font-weight-bold">{{ entry.name }}</h6>
+      {% endif %}
+
+      {% if entry.summary %}
+        <p class="project-dates">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      {% endif %}
+
+      {% comment %} Links sit between the date line and the highlights. {% endcomment %}
+      {% if entry.links %}
+        <p class="project-links">
+          {% for link in entry.links %}
+            {% if link.url contains '://' %}
+              <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title | default: link.url }}</a>
+            {% else %}
+              <a href="{{ link.url | relative_url }}">{{ link.title | default: link.url }}</a>
+            {% endif %}
+            {%- unless forloop.last %} <span class="project-links-sep">&middot;</span> {% endunless -%}
+          {% endfor %}
+        </p>
+      {% endif %}
+
+      {% if entry.highlights %}
+        <ul class="items">
+          {% for item in entry.highlights %}
+            <li>
+              <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
