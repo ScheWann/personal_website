@@ -113,38 +113,28 @@ cv:
         highlights:
           - Machine learning pipeline predicting post-treatment digestive outcomes from heterogeneous longitudinal clinical data.
           - A feature-partitioned stacking framework separating patient-reported from clinical variables reaches the best performance.
-        links:
-          - title: Dysphagia Risk Stratification (ICMLA 2026)
-            url: /publications/#zhao2026dysphagia
+          - "Related publication: Dysphagia Risk Stratification (ICMLA 2026) — /publications/#zhao2026dysphagia"
 
       - name: Spatial Transcriptomics Visual Analytics System for Multi-Sample Tissue Analysis
         summary: "*01/2025 – 03/2026*"
         highlights:
           - Visual analytics for multi-sample spatial transcriptomics, unifying 2µm-to-tissue-level data and histology images in one backbone.
           - Coordinated views and pseudo-temporal trajectory analysis compose region-level exploration into tissue-level insight.
-        links:
-          - title: Loom (IEEE VIS 2026)
-            url: /publications/#zhao2026loom
-          - title: A Part-to-Whole Circular Cell Explorer (IEEE BioMedVis 2024)
-            url: /publications/#zhao2024parttowhole
+          - "Related publications: Loom (IEEE VIS 2026) — /publications/#zhao2026loom; A Part-to-Whole Circular Cell Explorer (IEEE BioMedVis 2024) — /publications/#zhao2024parttowhole"
 
       - name: 3D Chromatin Data Platform for Single-Cell Genomics
         summary: "*08/2024 – 10/2025*"
         highlights:
           - Data platform for high-resolution single-cell 3D chromatin structures, pairing database management with 3D visualization.
           - Full-stack build with coordinated multi-view visualizations over sequencing tracks and 3D structures, tuned for large-scale loading.
-        links:
-          - title: ChromPolymerDB (Nucleic Acids Research 2026)
-            url: /publications/#chen2026chrompolymerdb
+          - "Related publication: ChromPolymerDB (Nucleic Acids Research 2026) — /publications/#chen2026chrompolymerdb"
 
       - name: Analysis of Human Brain Epilepsy Data
         summary: "*08/2023 – 06/2024*"
         highlights:
           - Web-based 3D platform pairing multi-session EEG with anatomical brain models to explore seizure propagation.
           - Temporal network analysis and dynamic community detection reveal how epileptic activity spreads across brain regions.
-        links:
-          - title: Neurosurgery Network Pattern Analysis (Computer Graphics Forum 2026)
-            url: /publications/#nipu2026neurosurgery
+          - "Related publication: Neurosurgery Network Pattern Analysis (Computer Graphics Forum 2026) — /publications/#nipu2026neurosurgery"
 
     # The renderer shows only title / publisher / date, so authors go in `summary`.
     # Publications:
