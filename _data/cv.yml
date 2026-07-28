@@ -109,7 +109,7 @@ cv:
           - Resolution-aware signal aggregation lets the same analysis scale across genomic resolutions and datasets.
 
       - name: Predictive Modeling of Digestive Outcomes in Head and Neck Cancer
-        summary: "*12/2025 – Present*"
+        summary: "*12/2025 – 07/2026*"
         highlights:
           - Machine learning pipeline predicting post-treatment digestive outcomes from heterogeneous longitudinal clinical data.
           - A feature-partitioned stacking framework separating patient-reported from clinical variables reaches the best performance.
@@ -183,13 +183,13 @@ cv:
         keywords: "D3.js, Three.js, WebGL, React.js, Vue.js, Next.js"
 
       - name: Machine Learning & Data Analysis
-        keywords: "Machine Learning (predictive modeling, supervised & unsupervised learning, regression, classification, clustering, temporal & time series forecasting), XGBoost, CatBoost, Big Data pipelines, Statistical Analysis"
+        keywords: "Machine Learning (predictive modeling, supervised & unsupervised learning, regression, classification, clustering, spatiotemporal series forecasting), XGBoost, CatBoost, Big Data pipelines, Statistical Analysis"
 
       - name: Programming Languages
         keywords: "JavaScript, TypeScript, Python, R, Dart"
 
       - name: Backend & Data
-        keywords: "Flask, Node.js, RESTful APIs, PostgreSQL, Redis, MongoDB, SQLite"
+        keywords: "Flask, Node.js, PostgreSQL, Redis, MongoDB, SQLite"
 
       - name: Scientific Computing
         keywords: "Pandas, NumPy, scikit-learn, scipy, OpenCV, Pillow, PyTorch, TensorFlow, Keras"
@@ -198,6 +198,6 @@ cv:
         keywords: "Visual Data Science, Visualization and Visual Analytics, Advanced Computer Vision, Neural Networks, Human Computer Interaction, Database Systems"
 
     # Not a known section type -> generic `label` / `details` renderer.
-    Volunteering:
+    Academic Service:
       - label: Reviewer
         details: IEEE VIS 2026, CogSci 2026, ISS 2026, IMWUT 2026, IDC 2026, CUI 2026, ICMLA 2026

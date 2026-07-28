@@ -5,9 +5,9 @@
 # These icons are rendered in the navbar (see `enable_navbar_social` in _config.yml).
 # Adding a key here adds another icon, so keep this list short.
 email: szhao69@uic.edu # your email address
+scholar_userid: O6vih8AAAAAJ # the `user` parameter of your Google Scholar profile URL
 github_username: ScheWann # your GitHub user name
 linkedin_username: siyuan-zhao-940461230 # your LinkedIn user name
 # x_username: SchewanZhao # your X handle
 # instagram_id: siyuanzhaooo # your Instagram ID
 # rss_icon: true # uncomment to show the RSS icon
-# scholar_userid: # your Google Scholar ID
