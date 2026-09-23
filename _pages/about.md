@@ -27,6 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Research Assistant at [Electronic Visualization Laboratory (EVL)](https://www.evl.uic.edu/) advised by [Prof. G. Elisabeta Marai](https://www.evl.uic.edu/marai/home/index.html).
+Research Assistant at [Electronic Visualization Laboratory (EVL)](https://www.evl.uic.edu/) advised by [Prof. G. Elisabeta Marai](https://lizmarai.github.io/lizmarai_webpage-main/home/index.html).
 
 My research leverages skills in visualization & visual analytics, big data analysis, and applied machine learning. Specifically, I focus on utilizing these skills within diverse domains: oncology, neurosurgery, genomics, and spatial transcriptomics, aiming to enhance the ability of domain experts to efficiently analyze large-scale data and uncover complex patterns.
